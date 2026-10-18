@@ -1,163 +1,184 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Document application assistance and customer support services.">
-<title>Global Document Services Agency</title>
+<meta name="description" content="Hayan Agency - Travel assistance, visa guidance and document services.">
+<title>Hayan Agency | Travel & Documents</title>
+
 <style>
-:root{--navy:#102b46;--blue:#1769aa;--gold:#eab84b;--light:#f3f6fa;--ink:#172638}
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;color:var(--ink);background:var(--light);line-height:1.6}
-header{background:var(--navy);color:white;padding:17px 5%;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.brand{font-size:20px;font-weight:800}
-.brand span{color:var(--gold)}
-nav a{color:white;text-decoration:none;margin-left:15px;font-size:14px}
-.hero{padding:65px 6%;background:linear-gradient(120deg,#102b46,#1769aa);color:white}
-.hero h1{font-size:clamp(30px,6vw,48px);line-height:1.15;max-width:650px;margin:0 0 16px}
-.hero p{max-width:580px;color:#e3edf7}
-.btn{display:inline-block;background:var(--gold);color:#14283b;padding:12px 20px;border:0;border-radius:7px;font-weight:bold;text-decoration:none;cursor:pointer}
-section{padding:40px 5%;scroll-margin-top:15px}
-.section-title{text-align:center;margin-bottom:25px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
-.card{background:white;padding:23px;border-radius:12px;box-shadow:0 4px 16px #102b4610}
-.card h3{margin-top:5px}
-.icon{font-size:28px}
-.small{font-size:13px;color:#64748b}
-.application{max-width:720px;margin:auto;background:white;padding:25px;border-radius:12px;box-shadow:0 4px 18px #102b4612}
-label{display:block;font-weight:600;margin:14px 0 5px}
-input,select,textarea{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:7px;font:inherit;background:white}
-input[type=file]{padding:9px}
-.check{display:flex;gap:10px;align-items:flex-start;font-weight:normal}
-.check input{width:auto;margin-top:7px}
-.payment{background:#fff8e6;border:1px solid #f0d58c;padding:16px;border-radius:9px;margin:18px 0}
-.notice{background:#eef5ff;padding:12px;border-radius:8px;font-size:13px}
-footer{background:var(--navy);color:white;text-align:center;padding:25px}
-footer a{color:#ffda82}
+body{margin:0;font-family:Arial,sans-serif;color:#172033;background:#f4f7fb;line-height:1.6}
+header{background:#071d3a;color:white;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+header h2{color:#f5c451;margin:0}
+nav a{color:white;text-decoration:none;margin:0 8px}
+.hero{background:linear-gradient(90deg,#071d3aeb,#071d3a66),url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80') center/cover;color:white;padding:85px 7%}
+.hero h1{font-size:clamp(32px,6vw,52px);max-width:700px;line-height:1.2}
+.hero p{font-size:18px;max-width:600px}
+.btn{display:inline-block;padding:13px 20px;background:#f5c451;color:#071d3a;text-decoration:none;font-weight:bold;border:0;border-radius:7px;cursor:pointer;margin:5px}
+section{padding:45px 6%}
+.title{text-align:center;color:#071d3a;font-size:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 15px #0001;padding-bottom:15px}
+.card img{width:100%;height:175px;object-fit:cover}
+.card h3,.card p{margin:14px}
+.formbox{max-width:700px;margin:auto;background:white;padding:24px;border-radius:12px;box-shadow:0 4px 15px #0001}
+label{display:block;font-weight:bold;margin-top:13px}
+input,select,textarea{width:100%;padding:12px;margin-top:5px;border:1px solid #ccd3df;border-radius:6px;font:inherit}
+.payment{max-width:700px;margin:25px auto;background:#fff8e5;padding:22px;border-left:5px solid #f5c451;border-radius:8px}
+footer{background:#071d3a;color:white;text-align:center;padding:25px}
+.small{font-size:14px;color:#586579}
 </style>
 </head>
+
 <body>
+
 <header>
-  <div class="brand">GLOBAL <span>DOCUMENTS</span></div>
+  <h2>HAYAN AGENCY</h2>
   <nav>
     <a href="#home">Home</a>
     <a href="#services">Services</a>
     <a href="#apply">Apply</a>
+    <a href="#payment">Payment</a>
   </nav>
 </header>
 
-<main>
-<section class="hero" id="home">
-  <p>YOUR DOCUMENT SUPPORT PARTNER</p>
-  <h1>Document Services Made Simple</h1>
-  <p>Get assistance with document applications, application preparation and customer support. Submit your request online to get started.</p>
-  <a class="btn" href="#apply">Start Your Application →</a>
-</section>
+<div class="hero" id="home">
+  <h1>Your Journey Starts Here</h1>
+  <p>Travel assistance, visa application guidance and document services in one place.</p>
+  <a class="btn" href="#apply">Apply Now</a>
+  <a class="btn" href="#services">Our Services</a>
+</div>
 
 <section id="services">
-  <div class="section-title">
-    <h2>Our Services</h2>
-    <p>Choose the service you need assistance with.</p>
-  </div>
+  <h2 class="title">Our Services</h2>
   <div class="cards">
-    <article class="card"><div class="icon">📄</div><h3>Document Assistance</h3><p>Guidance with preparing and organizing application documents.</p></article>
-    <article class="card"><div class="icon">🌍</div><h3>Visa Application Support</h3><p>Assistance with application forms and document checklists.</p></article>
-    <article class="card"><div class="icon">🗂️</div><h3>Application Review</h3><p>Help checking that application information is complete.</p></article>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80" alt="Travel">
+      <h3>Travel Assistance</h3>
+      <p>Guidance with travel planning and required documents.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80" alt="Air travel">
+      <h3>Visa Guidance</h3>
+      <p>Help understanding visa application processes and requirements. Visa approval is decided by the relevant authorities.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80" alt="Documents">
+      <h3>Document Services</h3>
+      <p>Assistance organizing documents for customer applications.</p>
+    </div>
+
   </div>
 </section>
 
 <section id="apply">
-  <div class="section-title">
-    <h2>Customer Application</h2>
-    <p>Enter your details to begin your service request.</p>
+  <h2 class="title">Customer Application</h2>
+
+  <div class="formbox">
+    <p>Fill in your details below. Your application will open in WhatsApp for you to review and send.</p>
+
+    <form id="applicationForm">
+      <label for="name">Full Name *</label>
+      <input id="name" required>
+
+      <label for="email">Email Address *</label>
+      <input id="email" type="email" required>
+
+      <label for="phone">Phone Number *</label>
+      <input id="phone" type="tel" required>
+
+      <label for="service">Service Required *</label>
+      <select id="service" required>
+        <option value="">Select a service</option>
+        <option>Visa Guidance</option>
+        <option>Travel Assistance</option>
+        <option>Document Services</option>
+        <option>Other</option>
+      </select>
+
+      <label for="country">Destination Country</label>
+      <input id="country" placeholder="Enter country">
+
+      <label for="details">Additional Information</label>
+      <textarea id="details" rows="3" placeholder="How can we help you?"></textarea>
+
+      <p class="small">Do not enter your passport number, M-Pesa PIN or other sensitive information in this form.</p>
+
+      <label>
+        <input type="checkbox" id="consent" required style="width:auto">
+        I agree to send these application details to Hayan Agency through WhatsApp.
+      </label>
+
+      <button class="btn" type="submit">Submit Application via WhatsApp</button>
+    </form>
+
+    <p id="message" role="status"></p>
   </div>
-  <form class="application" id="applicationForm">
-    <label for="fullname">Full name</label>
-    <input id="fullname" name="fullname" autocomplete="name" required maxlength="100" placeholder="Enter your full name">
-
-    <label for="email">Email address</label>
-    <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
-
-    <label for="phone">Phone / WhatsApp number</label>
-    <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+254...">
-
-    <label for="service">Service required</label>
-    <select id="service" name="service" required>
-      <option value="">Select a service</option>
-      <option>Document Assistance</option>
-      <option>Visa Application Support</option>
-      <option>Application Review</option>
-      <option>Other Document Service</option>
-    </select>
-
-    <label for="passport">Passport document (PDF or image)</label>
-    <input id="passport" name="passport" type="file" accept=".pdf,.jpg,.jpeg,.png" required>
-
-    <label for="photo">Face / passport-size photo</label>
-    <input id="photo" name="photo" type="file" accept=".jpg,.jpeg,.png" required>
-
-    <div class="payment">
-      <strong>Payment Information</strong>
-      <p>Payment number: <strong id="paymentNumber">ADD YOUR PAYMENT NUMBER</strong></p>
-      <p class="small">Confirm the service fee and payment instructions with the agency before paying. Submitting this form does not confirm payment.</p>
-    </div>
-
-    <label for="reference">Payment reference (if already paid)</label>
-    <input id="reference" name="reference" maxlength="100" placeholder="Optional transaction reference">
-
-    <label class="check">
-      <input type="checkbox" id="consent" required>
-      <span>I confirm that these are my details and consent to contacting the agency about this request.</span>
-    </label>
-
-    <p class="notice">Privacy: This demo form does not upload files or store applications on a server. Do not upload real passports until a secure submission method has been configured.</p>
-
-    <button class="btn" type="submit" style="width:100%;margin-top:14px">Submit Application</button>
-    <div id="result" role="status" aria-live="polite"></div>
-  </form>
 </section>
-</main>
+
+<section id="payment">
+  <h2 class="title">Manual M-Pesa Payment</h2>
+
+  <div class="payment">
+    <h3>Pay Hayan Agency</h3>
+    <p><strong>M-Pesa Number:</strong> 0798467186</p>
+    <p>1. Confirm the service and amount with our agency.</p>
+    <p>2. Send your payment to the M-Pesa number above.</p>
+    <p>3. Keep your M-Pesa confirmation message.</p>
+    <p>4. Send your transaction code to us through WhatsApp for manual verification.</p>
+    <a class="btn" href="https://wa.me/254729298682?text=Hello%20Hayan%20Agency%2C%20I%20have%20made%20an%20M-Pesa%20payment.%20I%20would%20like%20to%20submit%20my%20transaction%20code.">Submit Payment Confirmation</a>
+    <p class="small">Payments are checked manually. This website does not automatically verify payments.</p>
+    <p class="small">Never share your M-Pesa PIN or password.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="title">Contact Hayan Agency</h2>
+  <p style="text-align:center">Have a question? Chat with us directly on WhatsApp.</p>
+  <p style="text-align:center">
+    <a class="btn" href="https://wa.me/254729298682?text=Hello%20Hayan%20Agency%2C%20I%20would%20like%20more%20information.">Chat on WhatsApp</a>
+  </p>
+  <p style="text-align:center"><strong>WhatsApp: 0729298682</strong></p>
+</section>
 
 <footer>
-  <p><strong>Global Document Services Agency</strong></p>
-  <p>Document support and customer application assistance.</p>
-  <p class="small">Independent service provider. Not a government agency. Applications and visas are subject to the relevant authorities' decisions.</p>
+  <p>&copy; <span id="year"></span> Hayan Agency. All rights reserved.</p>
+  <p>Travel Assistance | Visa Guidance | Document Services</p>
 </footer>
 
 <script>
-const WHATSAPP_NUMBER = "254700000000";
-const PAYMENT_NUMBER = "ADD YOUR PAYMENT NUMBER";
+document.getElementById("year").textContent = new Date().getFullYear();
 
-document.getElementById("paymentNumber").textContent = PAYMENT_NUMBER;
+document.getElementById("applicationForm").addEventListener("submit", function(e) {
+  e.preventDefault();
 
-document.getElementById("applicationForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const service = document.getElementById("service").value;
+  const country = document.getElementById("country").value.trim();
+  const details = document.getElementById("details").value.trim();
 
-  const result = document.getElementById("result");
-  const whatsapp = WHATSAPP_NUMBER.replace(/\D/g, "");
+  const text =
+    "NEW CUSTOMER APPLICATION - HAYAN AGENCY\n\n" +
+    "Name: " + name + "\n" +
+    "Email: " + email + "\n" +
+    "Phone: " + phone + "\n" +
+    "Service: " + service + "\n" +
+    "Destination: " + (country || "Not provided") + "\n" +
+    "Details: " + (details || "None");
 
-  if (whatsapp === "254700000000" || whatsapp.length < 10) {
-    result.textContent = "The demo form is ready, but the agency must configure its real WhatsApp number and secure document submission before accepting applications.";
-    result.style.cssText = "margin-top:16px;padding:12px;background:#fff3cd;border-radius:8px";
-    return;
-  }
+  document.getElementById("message").textContent =
+    "Congratulations! Your application message is ready. Review it and press Send in WhatsApp.";
 
-  result.textContent = "Opening WhatsApp. Your files will NOT be attached automatically. Do not send sensitive documents until you have confirmed the recipient and a secure process.";
-  result.style.cssText = "margin-top:16px;padding:12px;background:#e7f7ed;border-radius:8px";
-
-  const message = [
-    "NEW SERVICE APPLICATION",
-    "Name: " + document.getElementById("fullname").value,
-    "Email: " + document.getElementById("email").value,
-    "Phone: " + document.getElementById("phone").value,
-    "Service: " + document.getElementById("service").value,
-    "Payment reference: " + (document.getElementById("reference").value || "Not provided"),
-    "Please advise on the secure document submission process."
-  ].join("\n");
-
-  window.open("https://wa.me/" + whatsapp + "?text=" + encodeURIComponent(message), "_blank", "noopener,noreferrer");
+  window.location.href =
+    "https://wa.me/254729298682?text=" + encodeURIComponent(text);
 });
 </script>
+
 </body>
 </html>
